@@ -69,15 +69,13 @@ export const Screenadd: React.FC<ScreenaddProp> = (props) => {
       }
     });
 
-    let average = {
+    return {
       AppetisersAverage:
         countAppetisers > 0 ? totalAppetisers / countAppetisers : 0,
       Main_CourseAverage:
         countMainCourse > 0 ? totalMainCourse / countMainCourse : 0,
       DessertAverage: countDessert > 0 ? totalDessert / countDessert : 0,
     };
-
-    return average;
   };
 
   // function to add the new dish
